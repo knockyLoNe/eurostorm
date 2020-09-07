@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./swiper.min.css">
+    <link rel="stylesheet" href="./fonts/rubik.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Отзывы</title>
+</head>
+
+<body>
+    <header>
+        <div class="container container_big">
+            <div class="header">
+                <div class="header-logo">
+                    <a href="./index.html">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header-contact">
+                    <img src="./img/phone-icon.svg" alt="">
+                    <div class="header-contact__wrap">
+                        <p>пн — пт: с 8:00 до 20:00 сб — вс: с 9:00 до 15:00</p>
+                        <a href="tel:+78312163440" class="header-contact__wrap_phone">+7 (831) 216-34-40</a>
+                        <a href="" class="header-contact__wrap_link">Нижний Новгород, <strong>ул.
+                                Рокоссовского,</strong>10</a>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <img src="./img/phone-icon-2.svg" alt="">
+                    <div class="header-contact__wrap">
+                        <p>пн — пт: с 8:00 до 20:00 сб — вс: с 9:00 до 15:00</p>
+                        <a href="tel:+78314115116" class="header-contact__wrap_phone">+7 (831) 411-51-16</a>
+                        <a href="" class="header-contact__wrap_link">Нижний Новгород, <strong>пр. Гагарина,</strong> 162
+                            «А»</a>
+                    </div>
+                </div>
+                <div class="header-icon">
+                    <img src="./img/insta-icon.svg" alt="">
+                    <img src="./img/vk-icon.svg" alt="">
+                </div>
+                <button class="header-button but-red">Записаться на прием</button>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container container_big">
+            <div class="menu">
+                <div class="burger-menu">
+                    <div class="burger-menu_item"></div>
+                    <div class="burger-menu_item"></div>
+                    <div class="burger-menu_item"></div>
+                </div>
+                <div class="menu-links">
+                    <a href="./services.html">Услуги</a>
+                    <a href="./price.html">Цены</a>
+                    <a href="./doctors.html">Врачи</a>
+                    <a href="./about.html">О клинике</a>
+                    <a href="./documentation.html">Документация</a>
+                    <a href="">Услуги по ОМС</a>
+                    <a href="./advisable.html">Полезная информация</a>
+                    <a href="">Отзывы</a>
+                    <a href="./contact.html">Контакты</a>
+                </div>
+                <button class="menu-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
+                        <path
+                            d="M26.5406 21.2768L22.0967 16.8329C22.9047 15.217 23.4433 13.3317 23.4433 11.4464C23.4433 5.11721 18.3261 0 11.9969 0C5.66774 0 0.550537 5.11721 0.550537 11.4464C0.550537 17.7756 5.66774 22.8928 11.9969 22.8928C13.8822 22.8928 15.7675 22.3541 17.3835 21.5461L21.8273 25.99C23.174 27.3367 25.1939 27.3367 26.5406 25.99C27.7525 24.6434 27.7525 22.6234 26.5406 21.2768ZM11.9969 20.1995C7.14904 20.1995 3.2438 16.2943 3.2438 11.4464C3.2438 6.5985 7.14904 2.69327 11.9969 2.69327C16.8448 2.69327 20.75 6.5985 20.75 11.4464C20.75 16.2943 16.8448 20.1995 11.9969 20.1995Z"
+                            fill="#EBEBEB" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="eye">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+                <path
+                    d="M24.9999 16.7207C20.6492 16.7207 17.1143 20.2557 17.1143 24.6064C17.1143 28.9571 20.6492 32.4921 24.9999 32.4921C29.3507 32.4921 32.8856 28.9571 32.8856 24.6064C32.8856 20.2557 29.3507 16.7207 24.9999 16.7207ZM24.4017 22.2679C23.4228 22.2679 22.607 23.0836 22.607 24.0626H19.9966C20.051 21.6153 22.0088 19.6574 24.4017 19.6574V22.2679Z"
+                    fill="white" />
+                <path
+                    d="M48.929 22.9753C46.2642 19.6579 36.7469 8.83545 25 8.83545C13.2531 8.83545 3.73585 19.6579 1.07103 22.9753C0.309656 23.8998 0.309656 25.2594 1.07103 26.2383C3.73585 29.5558 13.2531 40.3782 25 40.3782C36.7469 40.3782 46.2642 29.5558 48.929 26.2383C49.6903 25.3138 49.6903 23.9542 48.929 22.9753ZM25 36.0275C18.6915 36.0275 13.5794 30.9154 13.5794 24.6068C13.5794 18.2983 18.6915 13.1862 25 13.1862C31.3085 13.1862 36.4206 18.2983 36.4206 24.6068C36.4206 30.9154 31.3085 36.0275 25 36.0275Z"
+                    fill="white" />
+            </g>
+            <defs>
+                <clipPath id="clip0">
+                    <rect width="49" height="49" fill="white" transform="translate(0.5 0.106445)" />
+                </clipPath>
+            </defs>
+        </svg>
+    </div>
+
+
+    <section class="review">
+        <div class="container">
+            <div class="title title_links">
+                <a href="./index.html" class="title_link">Главная</a>
+                <a href="./price.html" class="title_link">/ Отзывы</a>
+            </div>
+            <div class="title title_line">
+                <h2>Отзывы</h2>
+            </div>
+            <div class="services-text">
+                <span>Мы будем рады, если вы оставите свой отзыв и поделитесь впечатлениями о посещении стоматологических клиник Евростом. Мы
+                стараемся заботиться о наших пациентах и поддерживать уровень, оказываемых услуг. Ваши комментарии и пожелания будут
+                учтены, а положительные сообщения помогут новым пациентам утвердиться в своем выборе.
+                <br>Внизу страницы расположена форма обратной связи. Это не займет много времени, зато поможет будущим пациентам избавиться от страхов и опасений, ведь в
+                большом количестве самых разных стоматологий, довольно сложно определится с выбором и быть уверенным в правильности
+                решения. Просто оставьте свой комментарий.</span>
+            </div>
+            <div class="buttons-select__wrap">
+                <select class="buttons-select__item">
+                    <option value="Специализация">Специализация</option>
+                </select>
+                <select class="buttons-select__item">
+                    <option value="Специализация">Все врачи</option>
+                </select>
+                <select class="buttons-select__item">
+                    <option value="Специализация">Все филиалы</option>
+                </select>
+                <button class="but-red">Оставить отзыв</button>
+            </div>
+            <div class="review-container">
+                <div class="review-wrap">
+                    <div class="review-item">
+                        <div class="row">
+                            <div class="review-item_title">
+                                <div class="name">Елена Александровна</div>
+                                <p>Отзыв оставлен в книге отзывов и предложений</p>
+                            </div>
+                            <div class="review-date">02.07.2019</div>
+                        </div>
+                        <div class="row">
+                            <div class="text">
+                                <p>Замечательная клиника, радует возможность лечения по ОМС. Особую благодарность хотелось бы
+                                    выразить доктору и ассистенту
+                                    за профессиональное, терпеливое, доброе отношение к моим детям, которым всего 3 года. Зубки
+                                    вылечили, очень довольны.</p>
+                                <a href="">Читать полностью</a>
+                            </div>
+                            <div class="review-img">
+                                <img src="./img/r-1.png" alt="">
+                                <img src="./img/r-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="review-item__icon">
+                                <img src="./img/girl.png" alt="">
+                                <p>Царева <br>Ирина Алексеевна</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/tooth.png" alt="">
+                                <p>Исправление <br>прикуса</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/place.png" alt="">
+                                <p>ул. Рокоссовского, 10</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="./img/d-3.png" alt="">
+                            <div class="review-item_bio">
+                                <p>Стулова Елена Геннадьевна</p>
+                                <span>Оксана, спасибо вам большое за отзыв. Рада, что вам все понравилось и вы довольны
+                                    результатом.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="row">
+                            <div class="review-item_title">
+                                <div class="name">Оксана</div>
+                                <p>Отзыв оставлен на сервисе Яндекс Карты</p>
+                            </div>
+                            <div class="review-date">02.03.2020</div>
+                        </div>
+                        <div class="row">
+                            <div class="text">
+                                <p>Замечательная клиника, радует возможность лечения по ОМС. Особую благодарность хотелось бы
+                                    выразить доктору и ассистенту
+                                    за профессиональное, терпеливое, доброе отношение к моим детям, которым всего 3 года. Зубки
+                                    вылечили, очень довольны.</p>
+                                <a href="">Читать полностью</a>
+                            </div>
+                            <div class="review-img">
+                                <img src="./img/r-1.png" alt="">
+                                <img src="./img/r-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="review-item__icon">
+                                <img src="./img/girl.png" alt="">
+                                <p>Царева <br>Ирина Алексеевна</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/tooth.png" alt="">
+                                <p>Исправление <br>прикуса</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/place.png" alt="">
+                                <p>ул. Рокоссовского, 10</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="./img/d-3.png" alt="">
+                            <div class="review-item_bio">
+                                <p>Стулова Елена Геннадьевна</p>
+                                <span>Оксана, спасибо вам большое за отзыв. Рада, что вам все понравилось и вы довольны
+                                    результатом.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-wrap">
+                    <div class="review-item">
+                        <div class="row">
+                            <div class="review-item_title">
+                                <div class="name">Екатерина Сперанская</div>
+                                <p>Отзыв оставлен на сервисе Google Map</p>
+                            </div>
+                            <div class="review-date">02.07.2019</div>
+                        </div>
+                        <div class="row">
+                            <div class="text">
+                                <p>Всегда во время. Лечат и дергают зубы хорошо. Нареканий нет.</p>
+                            </div>
+                            <div class="review-img">
+                                <img src="./img/r-1.png" alt="">
+                                <img src="./img/r-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="review-item__icon">
+                                <img src="./img/girl.png" alt="">
+                                <p>Царева <br>Ирина Алексеевна</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/tooth.png" alt="">
+                                <p>Исправление <br>прикуса</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/place.png" alt="">
+                                <p>ул. Рокоссовского, 10</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="./img/d-3.png" alt="">
+                            <div class="review-item_bio">
+                                <p>Стулова Елена Геннадьевна</p>
+                                <span>Оксана, спасибо вам большое за отзыв. Рада, что вам все понравилось и вы довольны
+                                    результатом.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="row">
+                            <div class="review-item_title">
+                                <div class="name">Irina S.</div>
+                                <p>Отзыв оставлен на сервисе Яндекс Карты</p>
+                            </div>
+                            <div class="review-date">02.03.2020</div>
+                        </div>
+                        <div class="row">
+                            <div class="text">
+                                <p>Обратилась в клинику по совету знакомых и ничуть не пожалела. Лечила пульпит по полису ОМС у Микаелян Наиры Вагановны.
+                                Очень внимательный, аккуратный ,грамотный специалист. Врач который вызывает доверие и полностью располагает к себе....</p>
+                                <a href="">Читать полностью</a>
+                            </div>
+                            <div class="review-img">
+                                <img src="./img/r-1.png" alt="">
+                                <img src="./img/r-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="review-item__icon">
+                                <img src="./img/girl.png" alt="">
+                                <p>Царева <br>Ирина Алексеевна</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/tooth.png" alt="">
+                                <p>Исправление <br>прикуса</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/place.png" alt="">
+                                <p>ул. Рокоссовского, 10</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="./img/d-3.png" alt="">
+                            <div class="review-item_bio">
+                                <p>Стулова Елена Геннадьевна</p>
+                                <span>Оксана, спасибо вам большое за отзыв. Рада, что вам все понравилось и вы довольны
+                                    результатом.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-wrap">
+                    <div class="review-item">
+                        <div class="row">
+                            <div class="review-item_title">
+                                <div class="name">Оксана</div>
+                                <p>Отзыв оставлен на сервисе Яндекс Карты</p>
+                            </div>
+                            <div class="review-date">02.03.2020</div>
+                        </div>
+                        <div class="row">
+                            <div class="text">
+                                <p>Замечательная клиника, радует возможность лечения по ОМС. Особую благодарность хотелось бы
+                                    выразить доктору и ассистенту
+                                    за профессиональное, терпеливое, доброе отношение к моим детям, которым всего 3 года. Зубки
+                                    вылечили, очень довольны.</p>
+                                <a href="">Читать полностью</a>
+                            </div>
+                            <div class="review-img">
+                                <img src="./img/r-1.png" alt="">
+                                <img src="./img/r-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="review-item__icon">
+                                <img src="./img/girl.png" alt="">
+                                <p>Царева <br>Ирина Алексеевна</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/tooth.png" alt="">
+                                <p>Исправление <br>прикуса</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/place.png" alt="">
+                                <p>ул. Рокоссовского, 10</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="./img/d-3.png" alt="">
+                            <div class="review-item_bio">
+                                <p>Стулова Елена Геннадьевна</p>
+                                <span>Оксана, спасибо вам большое за отзыв. Рада, что вам все понравилось и вы довольны
+                                    результатом.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="row">
+                            <div class="review-item_title">
+                                <div class="name">Елена Александровна</div>
+                                <p>Отзыв оставлен в книге отзывов и предложений</p>
+                            </div>
+                            <div class="review-date">02.07.2019</div>
+                        </div>
+                        <div class="row">
+                            <div class="text">
+                                <p>Замечательная клиника, радует возможность лечения по ОМС. Особую благодарность хотелось бы
+                                    выразить доктору и ассистенту
+                                    за профессиональное, терпеливое, доброе отношение к моим детям, которым всего 3 года. Зубки
+                                    вылечили, очень довольны.</p>
+                                <a href="">Читать полностью</a>
+                            </div>
+                            <div class="review-img">
+                                <img src="./img/r-1.png" alt="">
+                                <img src="./img/r-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="review-item__icon">
+                                <img src="./img/girl.png" alt="">
+                                <p>Царева <br>Ирина Алексеевна</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/tooth.png" alt="">
+                                <p>Исправление <br>прикуса</p>
+                            </div>
+                            <div class="review-item__icon">
+                                <img src="./img/place.png" alt="">
+                                <p>ул. Рокоссовского, 10</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="./img/d-3.png" alt="">
+                            <div class="review-item_bio">
+                                <p>Стулова Елена Геннадьевна</p>
+                                <span>Оксана, спасибо вам большое за отзыв. Рада, что вам все понравилось и вы довольны
+                                    результатом.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but-blue"><a href="">Показать еще</a></button>
+            </div>
+            <div class="title title_line">
+                <h2>Отзывы на сторонних источниках</h2>
+            </div>
+            <div class="row">
+                <button class="but-trans"><a href="">2GIS.RU</a></button>
+                <button class="but-trans"><a href="">GOOGLE.MAPS</a></button>
+                <button class="but-trans"><a href="">ЯНДЕКС.КАРТЫ</a></button>
+                <button class="but-trans"><a href="">ZOON</a></button>
+            </div>
+        </div>
+        </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-wrap">
+                    <div class="footer-item">
+                        <div class="row">
+                            <img src="./img/logo-2.png" alt="" class="footer-item_logo">
+                            <div class="footer-item_icons">
+                                <a href=""><img src="./img/insta-2.png" alt=""></a>
+                                <a href=""><img src="./img/vk-2.png" alt=""></a>
+                                <a href=""><img src="./img/telegram-2.png" alt=""></a>
+                                <a href=""><img src="./img/whatsup-2.png" alt=""></a>
+                                <a href=""><img src="./img/viber-3.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="footer-item_time"> пн — пт: с 8:00 до 20:00 сб — вс: с 9:00 до 15:00 </div>
+                        <div class="footer-contact">
+                            <img src="./img/phone-white.png" alt="">
+                            <div class="footer-contact__wrap">
+                                <a href="tel:+78312163440" class="footer-contact__wrap_phone">+7 (831) 216-34-40</a>
+                                <a href="" class="footer-contact__wrap_link">Нижний Новгород, ул. Рокоссовского,10</a>
+                                <a href="mail:rokos@evrostom-nn.ru" class="footer-contact__wrap_mail">Задать вопрос —
+                                    rokos@evrostom-nn.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer-contact">
+                            <img src="./img/phone-white.png" alt="">
+                            <div class="footer-contact__wrap">
+                                <a href="tel:+78314115116" class="footer-contact__wrap_phone">+7 (831) 411-51-16</a>
+                                <a href="" class="footer-contact__wrap_link">Нижний Новгород, пр. Гагарина,162 «А»</a>
+                                <a href="mail:gagarina@evrostom-nn.ru" class="footer-contact__wrap_mail">Задать вопрос —
+                                    gagarina@evrostom-nn.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer-contact">
+                            <img src="./img/phone-white.png" alt="">
+                            <div class="footer-contact__wrap">
+                                <a href="tel:+78314115116" class="footer-contact__wrap_phone">+7 (831) 411-51-16</a>
+                                <a href="" class="footer-contact__wrap_link">Нижний Новгород, пр. Гагарина,162 «А»</a>
+                                <a href="mail:info@evrostom-nn.ru" class="footer-contact__wrap_mail">Задать вопрос —
+                                    info@evrostom-nn.ru</a>
+                            </div>
+                        </div>
+                        <button class="footer-button">Написать директору</button>
+                    </div>
+                </div>
+                <div class="footer-wrap">
+                    <div class="footer-item_links">
+                        <p>Услуги</p>
+                        <a href="">Имплантация зубов</a>
+                        <a href="">Протезирование зубов</a>
+                        <a href="">Исправление прикуса</a>
+                        <a href="">Лечение зубов и дёсен</a>
+                        <a href="">Удаление зубов</a>
+                        <a href="">Лечение зубов во сне</a>
+                        <a href="">Услуги по ОМС</a>
+                        <a href="">Детская стоматология</a>
+                    </div>
+                    <div class="footer-item_links">
+                        <p>О клинике</p>
+                        <a href="">Врачи </a>
+                        <a href="">Цены</a>
+                        <a href="">О клинике</a>
+                        <a href="./vacancies.html">Вакансии</a>
+                        <a href="">Документация</a>
+                        <a href="">Блог врача</a>
+                        <a href="">Отзывы</a>
+                        <a href="">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="text">© OOO «Евростом», 2020</div>
+                <p>Обращаем ваше внимание, что данный сайт носит исключительно информационный характер и не является
+                    публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="scroll-top">
+        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M2.16586 10.7643L7.89709 4.58087L13.6283 10.7643L15.3971 8.85602L7.89709 0.764283L0.397095 8.85602L2.16586 10.7643Z"
+                fill="black" />
+        </svg>
+    </div>
+    
+    <script src="./swiper.min.js"></script>
+    <script src='./script.js'></script>
+    </body>
+    
+    </html>
