@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     doctorsSlider();
     caseSlider();
     blogSlider();
@@ -12,16 +12,16 @@ window.onload = function() {
     accHide();
 }
 
-window.onscroll = function() {
+window.onscroll = function () {
     buttonTop();
 }
 
 function accHide() {
     var acc = document.querySelectorAll('.acc-header');
     var blocks = document.querySelectorAll('.acc-item')
-    
+
     acc.forEach((ac, index) => {
-        ac.onclick = function() {
+        ac.onclick = function () {
             var button = ac.querySelector('button');
             ac.classList.toggle('acc-header_active');
             button.classList.toggle('acc-header__but-active')
@@ -46,7 +46,7 @@ function doctorsSlider() {
             prevEl: '.doctors-button_prev',
         },
     });
-} 
+}
 
 function caseSlider() {
     var swiper = new Swiper('.case-container', {
@@ -63,7 +63,7 @@ function caseSlider() {
             prevEl: '.case-button_prev',
         },
     });
-} 
+}
 
 function blogSlider() {
     var swiper = new Swiper('.blog-container', {
@@ -80,7 +80,7 @@ function blogSlider() {
             prevEl: '.blog-button_prev',
         },
     });
-} 
+}
 
 function reviewSlider() {
     var swiper = new Swiper('.review-slider', {
@@ -97,7 +97,7 @@ function reviewSlider() {
             prevEl: '.review-button_prev',
         },
     });
-} 
+}
 
 function advisableSlider() {
     var swiper = new Swiper('.advisable-container', {
@@ -114,7 +114,7 @@ function advisableSlider() {
             prevEl: '.advisable-button_prev',
         },
     });
-} 
+}
 
 function implantSlider() {
     var swiper = new Swiper('.implant-container', {
@@ -126,7 +126,7 @@ function implantSlider() {
             el: '.implant-pagination',
             clickable: true,
             renderBullet: function (index, className) {
-                return '<span class="' + className + '">'+ "Кейс " + (index + 1) + '</span>';
+                return '<span class="' + className + '">' + "Кейс " + (index + 1) + '</span>';
             },
         },
         navigation: {
@@ -134,7 +134,7 @@ function implantSlider() {
             prevEl: '.implant-button_prev',
         },
     });
-} 
+}
 
 function diplomSlider() {
     var swiper = new Swiper('.diplom-container', {
@@ -151,7 +151,7 @@ function diplomSlider() {
             prevEl: '.diplom-button_prev',
         },
     });
-} 
+}
 
 function historySlider() {
     var swiper = new Swiper('.history-container', {
@@ -168,7 +168,7 @@ function historySlider() {
             prevEl: '.history-button_prev',
         },
     });
-} 
+}
 
 
 function buttonTop() {
@@ -177,8 +177,7 @@ function buttonTop() {
 
     if (scrolled > 100) {
         but.classList.add('scroll-top_active')
-    }
-    else {
+    } else {
         but.classList.remove('scroll-top_active')
     }
 }
@@ -195,3 +194,11 @@ function scrollButton() {
         });
     }
 }
+
+var link = document.querySelector('.mobile-phone');
+var popup = document.querySelector('.modal-mobile_phone');
+
+link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add('modal-mobile_show');
+});

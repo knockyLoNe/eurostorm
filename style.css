@@ -43,6 +43,37 @@ header .menu {
   display: none;
 }
 
+.mobile-prosthesis {
+  display: none;
+}
+
+.modal-mobile {
+  display: none;
+}
+
+.mobile-close {
+  display: none;
+}
+
+.history-grey .history-item .bio {
+  display: none
+}
+
+.mobile-only-h2 {
+  display: none;
+}
+
+.mobile-gallery {
+  display: none;
+}
+
+.modal-menu {
+  display: none;
+}
+
+.burger-close {
+  display: none;
+}
 
 /* -= =- */
 
@@ -4345,7 +4376,60 @@ nav ul li {
     display: none;
   }
 
-  .services-wrap {
+  .service-item_none {
+    display: none;
+  }
+
+  .mobile-prosthesis {
+    display: block;
+  }
+
+  .mobile-prosthesis {
+    margin-top: 26px;
+  }
+
+  .mobile-prosthesis .title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .mobile-prosthesis p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 13px;
+  }
+
+  .mobile-prosthesis span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .mobile-prosthesis .but-wrap .but-red {
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .mobile-prosthesis .but-wrap .but-trans {
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+    min-height: 60px;
+    margin-bottom: 30px;
+  }
+
+  .services .title-center {
+    margin-top: 44px;
+    margin-bottom: 18px;
+  }
+
+  .services .container>.services-wrap,
+  .acc-item_active {
     display: block;
     margin: 0;
     padding: 0;
@@ -4405,13 +4489,22 @@ nav ul li {
     display: block;
   }
 
+  .evrostom-wrap {
+    margin-right: 0;
+  }
+
   .evrostom-item {
     width: 100%;
+    height: 190px;
     margin-bottom: 10px;
   }
 
   .second-doctor {
     display: none;
+  }
+
+  .evrostom-item img {
+    object-fit: cover;
   }
 
 
@@ -4498,10 +4591,11 @@ nav ul li {
   }
 
   .blog .buttons {
-    position: absolute;
+    position: relative;
     width: 100px;
-    right: 32%;
-    top: 98%;
+    margin: 0.5em auto;
+    top: 0;
+    left: 0;
   }
 
   .blog-wrap {
@@ -4511,6 +4605,8 @@ nav ul li {
 
   .blog-wrap img {
     margin: 0 auto;
+    max-width: none;
+    width: 100%;
   }
 
   .blog-item {
@@ -4556,7 +4652,6 @@ nav ul li {
     line-height: 14px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 66px;
   }
 
   .blog-item_bio p {
@@ -4568,9 +4663,13 @@ nav ul li {
     margin-top: 15px;
   }
 
+
+
   .button-row_bottom {
-    top: 95%;
-    left: 27%;
+    position: relative;
+    margin: 4em auto;
+    top: 0;
+    left: 0;
   }
 
   .blog-item_buttons .date {
@@ -4619,12 +4718,16 @@ nav ul li {
   .signup .buttons {
     display: flex;
     flex-wrap: wrap;
+    position: initial;
   }
 
   .slider-button {
     margin: 0 auto;
     margin-top: 15px;
+  }
 
+  .title {
+    margin: 0;
   }
 
   .signup .title a {
@@ -4632,7 +4735,7 @@ nav ul li {
     line-height: 24px;
     text-align: center;
     margin-top: 6px;
-    margin-bottom: 100px;
+    margin-bottom: 12px;
   }
 
   .signup text {
@@ -4651,7 +4754,7 @@ nav ul li {
 
   .signup-form__wrap .form {
     margin-bottom: 16px;
-    margin-top: 43px;
+    margin-top: 23px;
   }
 
   .signup-form__wrap .form input {
@@ -4928,10 +5031,6 @@ nav ul li {
     margin-bottom: 20px
   }
 
-  .signup .title a {
-    margin-bottom: 55px;
-  }
-
   /* Services page */
 
   .services .title h2 {
@@ -5065,8 +5164,22 @@ nav ul li {
 
   /* Implant Page */
 
-  .banner-text__implant h1 {
-    margin-top: 100px;
+  .banner_3 .banner-wrap {
+    margin-bottom: 86px;
+  }
+
+  .banner_3 .container {
+    background-image: url(img/Tooth_thing.png);
+    background-repeat: no-repeat;
+    background-position: -1px -20px;
+    background-size: 100%;
+  }
+
+  .banner_3 {
+    background-image: url(img/Tooth_small.png);
+    background-position: 6px 449px;
+    background-size: 100%;
+    background-color: #418EAD;
   }
 
   .banner-text li {
@@ -5160,8 +5273,40 @@ nav ul li {
     margin-bottom: 53px;
   }
 
+  .adventages {
+    padding-top: 70px;
+  }
 
+  .adventages .title h2 {
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 66px;
+  }
 
+  .adventages-wrap {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .adventages-item {
+    margin: 0 auto;
+  }
+
+  .adventages-item p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .adventages-item span {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 78px;
+  }
 
   /* Vacancies page */
 
@@ -5343,7 +5488,370 @@ nav ul li {
 
   .mobile-map {
     display: block;
-    width: 320px;
+    width: 100%;
     height: 390px;
   }
+
+  /* About page */
+  .banner_2 .banner-text h1 {
+    margin-bottom: 27px;
+    margin-top: 33px;
+  }
+
+  .banner_2 .container {
+    padding-bottom: 125px;
+  }
+
+  .banner_2 {
+    background-image: url(img/banner-girl-mobile2.png);
+    background-position: 0 563px;
+    background-size: 100%;
+    padding-bottom: 20px;
+    background-color: #D51A36;
+  }
+
+  .about-wrap {
+    flex-wrap: wrap;
+  }
+
+  .about-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-heigh: 28px;
+  }
+
+  .about-wrap_content p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .about-item {
+    flex-wrap: wrap;
+  }
+
+  .about-item_text {
+    text-align: center;
+  }
+
+  .about-item_text p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 22px;
+  }
+
+  .about-item_text span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .about-item img {
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+
+  .about-item:last-child {
+    margin-bottom: 60px;
+  }
+
+  .diplom {
+    padding-bottom: 80px;
+  }
+
+  .diplom .container {
+    padding-right: 87px;
+    padding-left: 87px;
+  }
+
+  .diplom-button_next {
+    right: -70px;
+  }
+
+  .diplom-button_prev {
+    left: -70px;
+  }
+
+  .history .title h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .history .swiper-container {
+    flex-wrap: wrap;
+  }
+
+  .history-grey .row .bio {
+    display: none;
+  }
+
+  .history-video {
+    display: none;
+  }
+
+  .history-grey .history-item .bio {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 9px;
+  }
+
+  .history-item {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .history-item p {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .history-item span {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .strong-quote {
+    margin-top: 25px;
+  }
+
+  .history-grey .but-trans {
+    border-radius: 0;
+  }
+
+  .adventages .title h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .visually-hidden {
+    display: none;
+  }
+
+  .mobile-only-h2 {
+    display: block;
+  }
+
+  .gallery {
+    display: none;
+  }
+
+  .mobile-gallery {
+    display: block;
+    background-color: #E5E5E5;
+  }
+
+  .mobile-gallery .gallery-item img {
+    width: 100%;
+    height: 190px;
+    margin-bottom: 10px;
+  }
+
+  .gallery-item {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Popup Mobile-phone */
+
+  .modal-mobile {
+    display: none;
+  }
+
+  .modal-mobile p {
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    letter-spacing: 0.015em;
+  }
+
+  .modal-mobile_contact_info {
+    position: relative;
+    width: 236px;
+    text-align: center;
+    margin: 0.5em auto;
+    top: 0;
+    left: 0;
+  }
+
+  .modal-mobile_contact_info:first-child {
+    margin-bottom: 25px;
+  }
+
+  .modal-mobile a {
+    color: #000000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-mobile .header-contact__wrap_link {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+  }
+
+  .modal-mobile_social_links {
+    margin-top: 46px;
+    margin-bottom: 20px;
+  }
+
+  .modal-mobile_social_links img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .modal-mobile_social_links ul {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .modal-mobile .but-red {
+    width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .mobile-container_button {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .modal-mobile_show {
+    display: block;
+    position: absolute;
+    top: 65px;
+    background-color: #E5E5E5;
+    width: 100%;
+    padding-top: 54px;
+    padding-bottom: 500px;
+  }
+
+
+  .mobile-close_show {
+    display: block;
+    background-image: url(img/phone_close_btn.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 30px;
+  }
+
+  .mobile-alignment {
+    margin: auto 0 auto auto;
+  }
+
+  /* Popup Bueger-menu */
+
+  .modal-menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    background-color: #E5E5E5;
+    width: 100%;
+    padding-top: 54px;
+  }
+
+  .modal-menu li a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+
+  .modal-menu li {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 43px;
+
+  }
+
+  .button-contact_area {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 6px rgba(196, 196, 196, 0.4);
+    padding-right: 42px;
+    padding-left: 42px;
+    text-align: center;
+  }
+
+  .button-contact_area .but-red {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .modal-menu .header-contact__wrap_link {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+  }
+
+  .modal-menu_contact_info {
+    margin-bottom: 24px;
+  }
+
+  .modal-menu_contact_info:last-child {
+    margin: 0;
+    padding-bottom: 65px;
+  }
+
+  .modal-menu_contact_info a {
+    color: #000000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-menu_show {
+    display: block;
+    position: absolute;
+    top: 65px;
+    background-color: #E5E5E5;
+    width: 100%;
+    padding-top: 54px;
+  }
+
+  .burger-close_show {
+    display: block;
+    background-image: url(img/phone_close_btn.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 65px;
+
+    margin: auto auto auto 0;
+
+  }
+
 }
