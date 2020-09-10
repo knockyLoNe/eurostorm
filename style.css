@@ -4519,7 +4519,11 @@ nav ul li {
   }
 
   .buttons {
-    top: 65%;
+    position: relative;
+    width: 100px;
+    margin: 0.5em auto;
+    top: 0;
+    left: 0;
   }
 
   .case-item_text p {
@@ -4723,6 +4727,7 @@ nav ul li {
     display: flex;
     flex-wrap: wrap;
     position: initial;
+    width: 100%;
   }
 
   .slider-button {
@@ -5810,6 +5815,307 @@ nav ul li {
     width: 100%;
     height: 326px;
     background-color: red;
+  }
+
+
+  /* Doctor page */
+
+  .doctor-container .doctor-wrap {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .doctor-wrap_info {
+    padding: 0;
+  }
+
+  .doctor-wrap_info__title h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .doctor-wrap_info__title p {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .doctor .year {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .doctor-wrap_info .row .button-row {
+    position: relative;
+    width: 136px;
+    margin: 0.5em auto;
+    top: 0;
+    left: 0;
+  }
+
+  .doctor .but-red {
+    max-width: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 22px;
+    margin-bottom: 20px;
+  }
+
+  .doctor .but-trans {
+    max-width: none;
+    padding: 20px 40px;
+  }
+
+  .doctor-wrap_branch p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .doctor-wrap_branch span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .doctor-wrap_address p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .doctor-wrap_address span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .doctor-education_title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .doctor-education_text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px;
+  }
+
+  .doctor-quote {
+    padding-top: 46px;
+    padding-left: 22px;
+    padding-right: 13px;
+    text-align: left;
+  }
+
+  .doctor-quote p {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 24px;
+  }
+
+  .doctor-quote span {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .doctor .container h2 {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .doctor .container .acc p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .services-wrap__button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .services-wrap__button:active,
+  .services-wrap__button:hover {
+    color: #ffffff;
+    border: 0;
+  }
+
+  .services-wrap__button:first-child {
+    margin-top: 15px;
+  }
+
+  /* Review page */
+
+  .review {
+    padding-top: 0;
+  }
+
+  .review .title h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .review .services-text {
+    margin-top: 20px;
+  }
+
+  .review .buttons-select__wrap {
+    flex-wrap: wrap;
+  }
+
+  .review .buttons-select__wrap .but-red {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-right: 35px;
+    margin-left: 35px;
+    padding: 20px 40px;
+    margin-bottom: 68px;
+  }
+
+  .review-item-mobile-none {
+    display: none;
+  }
+
+  .review-mobile-wrap {
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .review-item {
+    margin-bottom: 23px;
+    padding: 0;
+  }
+
+  .review-item_title .name {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    margin-top: 16px;
+  }
+
+  .review-item_title p {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .review .text p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .review .text a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .review-date {
+    position: absolute;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    padding: 3px;
+    left: 38px;
+    margin-top: 18px;
+  }
+
+  .review-img {
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .review-img img {
+    width: 64px;
+    margin-right: 10px;
+  }
+
+  .review-container .row {
+    flex-direction: column;
+
+  }
+
+  .review-item__icon p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .mobile-row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mobile-row2 {
+    flex-direction: inherit;
+    background-color: #F8F8F8;
+    padding-bottom: 20px;
+  }
+
+  .review-item_bio {
+    display: inline-block;
+    width: 196px;
+  }
+
+  .review .but-blue a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .review .title_left h2 {
+    text-align: left;
+  }
+
+  .review .button-reviews {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+  .review .button-reviews .but-trans {
+    margin-bottom: 15px;
+  }
+
+  .review .button-reviews .but-trans a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
   }
 
   /* Popup Mobile-phone */
