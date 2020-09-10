@@ -14,6 +14,38 @@
 <body>
     <header>
         <div class="container container_big">
+
+            <div>
+                <div class="menu">
+                    <div class="burger-menu">
+                        <div class="burger-menu_item"></div>
+                        <div class="burger-menu_item"></div>
+                        <div class="burger-menu_item"></div>
+                    </div>
+                    <div class="menu-links">
+                        <a href="./services.html">Услуги</a>
+                        <a href="./price.html">Цены</a>
+                        <a href="./doctors.html">Врачи</a>
+                        <a href="./about.html">О клинике</a>
+                        <a href="./documentation.html">Документация</a>
+                        <a href="">Услуги по ОМС</a>
+                        <a href="./advisable.html">Полезная информация</a>
+                        <a href="./review.html">Отзывы</a>
+                        <a href="./contact.html">Контакты</a>
+                    </div>
+                    <button class="menu-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
+                            <path
+                                d="M26.5406 21.2768L22.0967 16.8329C22.9047 15.217 23.4433 13.3317 23.4433 11.4464C23.4433 5.11721 18.3261 0 11.9969 0C5.66774 0 0.550537 5.11721 0.550537 11.4464C0.550537 17.7756 5.66774 22.8928 11.9969 22.8928C13.8822 22.8928 15.7675 22.3541 17.3835 21.5461L21.8273 25.99C23.174 27.3367 25.1939 27.3367 26.5406 25.99C27.7525 24.6434 27.7525 22.6234 26.5406 21.2768ZM11.9969 20.1995C7.14904 20.1995 3.2438 16.2943 3.2438 11.4464C3.2438 6.5985 7.14904 2.69327 11.9969 2.69327C16.8448 2.69327 20.75 6.5985 20.75 11.4464C20.75 16.2943 16.8448 20.1995 11.9969 20.1995Z"
+                                fill="#EBEBEB" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="burger-close"></div>
+
+            </div>
+
             <div class="header">
                 <div class="header-logo">
                     <a href="./index.html"><img src="./img/logo.png" alt=""></a>
@@ -42,9 +74,13 @@
                 </div>
                 <button class="header-button but-red">Записаться на прием</button>
             </div>
+            <div class="mobile-alignment">
+                <div class="mobile-phone"></div>
+                <div class="mobile-close"></div>
+            </div>
         </div>
     </header>
-    <section>
+    <section class="burger-section">
         <div class="container container_big">
             <div class="menu">
                 <div class="burger-menu">
@@ -93,7 +129,7 @@
     <section class="dostors-page doctors_grey">
         <div class="container">
             <div class="title title_links">
-                <a href='./index.html'  class="title_link">Главная</a>
+                <a href='./index.html' class="title_link">Главная</a>
                 <a href='./about.html' class="title_link">/ О клинике</a>
                 <a href='./doctors.html' class="title_link">/ Врачи</a>
             </div>
@@ -104,13 +140,13 @@
                 <span>А вы уже выбрали своего стоматолога?</span>
             </div>
             <div class="buttons-select__wrap">
-                <select class="buttons-select__item">
+                <select class="buttons-select__item buttons-icon1">
                     <option value="Специализация">Специализация</option>
                 </select>
-                <select class="buttons-select__item">
+                <select class="buttons-select__item buttons-icon2">
                     <option value="Специализация">Все врачи</option>
                 </select>
-                <select class="buttons-select__item">
+                <select class="buttons-select__item buttons-icon3">
                     <option value="Специализация">Все филиалы</option>
                 </select>
             </div>
@@ -132,7 +168,7 @@
                         </div>
                         <button class="but-blue">Подробнее</button>
                         <div class="button-row">
-                            <button class="rev">оставить первый отзыв</button>
+                            <button class="rev">8 отзывов</button>
                             <button class="art">1 статья</button>
                         </div>
                     </div>
@@ -140,7 +176,7 @@
                 <div class="doctors-item doctors-item_page">
                     <img src="./img/doctors/1-2.png" alt="">
                     <div class="doctors-item__text">
-                        <div class="title"> Царева  <br> Ирина Алексеевна </div>
+                        <div class="title"> Царева <br> Ирина Алексеевна </div>
                         <p>Врач стоматолог-хирург</p>
                         <div class="row">
                             <div class="year">
@@ -225,25 +261,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="doctors-item doctors-item_page">
-                    <img src="./img/doctors/1-2.png" alt="">
-                    <div class="doctors-item__text">
-                        <div class="title"> Царева <br> Ирина Алексеевна </div>
-                        <p>Врач стоматолог-хирург</p>
-                        <div class="row">
-                            <div class="year">
-                                <div class="num">6</div>
-                                <div class="text">лет<br> стажа</div>
+
+
+                <div class="mobile-short_cut">
+                    <div>
+                        <p>Показать еще</p>
+                        <div class="img-down"></div>
+                    </div>
+                </div>
+
+                <div class="doctors-bio">
+                    <div class="doctors-item doctors-item_page ">
+                        <img src="./img/doctors/1-2.png" alt="">
+                        <div class="doctors-item__text">
+                            <div class="title"> Царева <br> Ирина Алексеевна </div>
+                            <p>Врач стоматолог-хирург</p>
+                            <div class="row">
+                                <div class="year">
+                                    <div class="num">6</div>
+                                    <div class="text">лет<br> стажа</div>
+                                </div>
+                                <div class="year">
+                                    <div class="num">2</div>
+                                    <div class="text">года <br>в Евростом</div>
+                                </div>
                             </div>
-                            <div class="year">
-                                <div class="num">2</div>
-                                <div class="text">года <br>в Евростом</div>
+                            <button class="but-blue">Подробнее</button>
+                            <div class="button-row">
+                                <button class="rev">8 отзывов</button>
+                                <button class="art">1 статья</button>
                             </div>
-                        </div>
-                        <button class="but-blue">Подробнее</button>
-                        <div class="button-row">
-                            <button class="rev">8 отзывов</button>
-                            <button class="art">1 статья</button>
                         </div>
                     </div>
                 </div>
@@ -251,24 +298,28 @@
         </div>
     </section>
 
-    <section class="history">
+    <section class="history doctors-page_mobile_visually_hidden">
         <div class="container">
             <div class="history-wrap">
                 <div class="history-item">
                     <div>
                         <p>Добро пожаловать в дружную семью сети клиник «Евростом»!</p>
-                        <span>В стоматологии «Евростом» в Нижнем Новгороде я работаю с самого первого дня - с дня открытия. И даже вступив в должность
-                        главного врача, я не оставляю свое призвание – лечение зубов. Мне нравится работать плечом к плечу с настоящими
-                        профессионалами своего дела — когда приходит пациент, у которого сразу несколько стоматологических проблем, над
-                        разработкой и реализацией комплексного плана лечения работает целая команда специалистов. Я гарантирую, что обратившись
-                        в нашу клинику, вы сможете на долгое время сохранить здоровье и красоту ваших зубов.</span>
-                            <div class="row">
-                                <div class="bio">Стулова Елена Геннадьевна, Главный врач сети клиник «Евростом»</div>
-                                <a href="" class="history-video">
-                                    <img src="./img/about/play.svg" alt="">
-                                    Смотреть <br>видео
-                                </a>
-                            </div>
+                        <span>В стоматологии «Евростом» в Нижнем Новгороде я работаю с самого первого дня - с дня
+                            открытия. И даже вступив в должность
+                            главного врача, я не оставляю свое призвание – лечение зубов. Мне нравится работать плечом к
+                            плечу с настоящими
+                            профессионалами своего дела — когда приходит пациент, у которого сразу несколько
+                            стоматологических проблем, над
+                            разработкой и реализацией комплексного плана лечения работает целая команда специалистов. Я
+                            гарантирую, что обратившись
+                            в нашу клинику, вы сможете на долгое время сохранить здоровье и красоту ваших зубов.</span>
+                        <div class="row">
+                            <div class="bio">Стулова Елена Геннадьевна, Главный врач сети клиник «Евростом»</div>
+                            <a href="" class="history-video">
+                                <img src="./img/about/play.svg" alt="">
+                                Смотреть <br>видео
+                            </a>
+                        </div>
                     </div>
                     <img src="./img/doctors/1-3.png" alt="">
                 </div>
@@ -372,12 +423,48 @@
         </div>
     </section>
 
+    <section class="signup">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h2>Записаться на прием к врачу</h2>
+                    <a href="">Оставьте ваш номер, и наш специалист перезвонит вам!</a>
+                    <div class="buttons">
+                        <p class="signup-text">Заполнить расширенную версию заявки, чтобы быстрее подтвердить дату и
+                            время приёма.</p>
+                        <div class="slider-button slider-button_next">
+                            <svg width="11" height="16" viewBox="0 0 11 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.593749 2.24631L6.77717 7.97754L0.59375 13.7088L2.50201 15.4775L10.5937 7.97754L2.50201 0.477539L0.593749 2.24631Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="signup-form__wrap">
+                <form class="form">
+                    <input type="text" placeholder="Ваше имя и фамилия">
+                    <input type="text" placeholder="+7 (___)___-__-__">
+                    <button class="but-red">Записаться</button>
+                </form>
+                <a href="">Нажимая на кнопку я даю свое согласие на обработку компанией ООО «Евростом» моих персональных
+                    данных в
+                    соответствии с
+                    требованиями Федерального закона от 27.07.2006г. № 152-ФЗ «О персональных данных» и Политикой
+                    обработки и защиты
+                    персональных данных ООО «Евростом».</a>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-wrap">
                     <div class="footer-item">
-                        <div class="row">
+                        <div class="row row-invert">
                             <img src="./img/logo-2.png" alt="" class="footer-item_logo">
                             <div class="footer-item_icons">
                                 <a href=""><img src="./img/insta-2.png" alt=""></a>
@@ -445,7 +532,7 @@
             </div>
         </div>
     </footer>
-    
+
     <section class="info">
         <div class="container">
             <div class="row">
@@ -457,7 +544,7 @@
             </div>
         </div>
     </section>
-    
+
     <div class="scroll-top">
         <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -465,8 +552,66 @@
                 fill="black" />
         </svg>
     </div>
+
+
+    <div class="modal-mobile modal-mobile_phone">
+        <div class="modal-mobile_contact_info">
+            <p>пн — пт: с 8:00 до 20:00 сб — вс: с 9:00 до 15:00</p>
+            <a href="tel:+78314115116">+7 (831) 411-51-16</a><br>
+            <a href="" class="header-contact__wrap_link">Нижний Новгород, <strong>пр. Гагарина</strong>, 162 «А»</a>
+        </div>
+        <div class="modal-mobile_contact_info">
+            <p>пн — пт: с 8:00 до 20:00 сб — вс: с 9:00 до 15:00</p>
+            <a href="tel:+78312163440">+7 (831) 216-34-40</a><br>
+            <a href="" class="header-contact__wrap_link">Нижний Новгород, <strong>ул. Рокоссовского</strong>, 10</a>
+        </div>
+        <div class="modal-mobile_social_links">
+            <ul>
+                <li><a href=""><img src="./img/insta_mobile.png" alt=""></a></li>
+                <li><a href=""><img src="./img/vk_mobile.png" alt=""></a></li>
+                <li><a href=""><img src="./img/telegram_mobile.png" alt=""></a></li>
+                <li><a href=""><img src="./img/whatsup_mobile.png" alt=""></a></li>
+                <li><a href=""><img src="./img/viber_mobile.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="mobile-container_button">
+            <button class="but-red">Записаться на прием</button>
+        </div>
+    </div>
+
+    <div class="modal-menu modal-menu_burger">
+        <ul>
+            <li><a href="./services.html">Услуги</a></li>
+            <li><a href="./price.html">Цены</a></li>
+            <li><a href="./doctors.html">Врачи</a></li>
+            <li><a href="./about.html">О клинике</a></li>
+            <li><a href="./documentation.html">Документация</a></li>
+            <li><a href="">Услуги по ОМС</a></li>
+            <li><a href="./advisable.html">Полезная информация</a></li>
+            <li><a href="">Отзывы</a></li>
+            <li><a href="./contact.html">Контакты</a></li>
+        </ul>
+
+        <div class="button-contact_area">
+            <button class="but-red">Записаться на прием</button>
+
+
+            <div class="modal-menu_contact_info">
+                <a href="tel:+78314115116">+7 (831) 411-51-16</a><br>
+                <a href="" class="header-contact__wrap_link">Нижний Новгород, <strong>пр. Гагарина</strong>, 162 «А»</a>
+            </div>
+            <div class="modal-menu_contact_info">
+                <a href="tel:+78312163440">+7 (831) 216-34-40</a><br>
+                <a href="" class="header-contact__wrap_link">Нижний Новгород, <strong>ул. Рокоссовского</strong>, 10</a>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="./swiper.min.js"></script>
     <script src='./script.js'></script>
+    <script src='./script-popup.js'></script>
 </body>
 
 </html>

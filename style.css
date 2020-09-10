@@ -75,6 +75,10 @@ header .menu {
   display: none;
 }
 
+.mobile-short_cut {
+  display: none;
+}
+
 /* -= =- */
 
 .row {
@@ -5663,6 +5667,149 @@ nav ul li {
   .gallery-item {
     width: 100%;
     object-fit: cover;
+  }
+
+  /* Doctors page */
+
+  .doctors-page_mobile_visually_hidden {
+    display: none;
+  }
+
+  .dostors-page .title_line h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .doctors-page__text span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 14px;
+  }
+
+  .dostors-page .buttons-select__item {
+    margin-left: 0;
+  }
+
+  .buttons-icon1 {
+    background-image: url(./img/icons/teeth.png);
+    width: 40px;
+    height: 40px;
+  }
+
+  .buttons-icon2 {
+    background-image: url(./img/icons/girl.png);
+    width: 40px;
+    height: 40px;
+  }
+
+  .buttons-icon3 {
+    background-image: url(./img/icons/office.png);
+    width: 40px;
+    height: 40px;
+  }
+
+  .doctors-item_page {
+    flex-wrap: wrap;
+  }
+
+  .doctors-item__text .but-blue {
+    margin-left: 12px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding-top: 17p;
+    min-height: none;
+  }
+
+  .doctors-item__text .button-row .rev {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .doctors-item__text .button-row {
+    margin-top: 13px;
+    margin-left: 19px;
+    left: 0px;
+  }
+
+  .doctors-item {
+    padding: 0;
+  }
+
+  .doctors-item img {
+    max-width: none;
+    width: 100%;
+  }
+
+  .doctors-item__text {
+    padding: 0;
+  }
+
+  .doctors-item__text .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 60px;
+    margin-left: 19px;
+  }
+
+  .doctors-item__text p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 19px;
+  }
+
+  .doctors-item__text .num {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: right;
+    margin-left: 19px;
+  }
+
+  .doctors-item__text .text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px
+  }
+
+  .mobile-short_cut p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .img-down {
+    background-image: url(./img/icons/down.png);
+    width: 15px;
+    height: 10px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 7px;
+  }
+
+  .mobile-short_cut {
+    display: block;
+  }
+
+  .doctors-bio {
+    display: none;
+  }
+
+  .doctors-bio-show {
+    position: absolute;
+    display: block;
+    top: 3947px;
+    left: 0;
+    width: 100%;
+    height: 326px;
+    background-color: red;
   }
 
   /* Popup Mobile-phone */
