@@ -79,6 +79,11 @@ header .menu {
   display: none;
 }
 
+.dectop-hidden {
+  display: none;
+}
+
+
 /* -= =- */
 
 .row {
@@ -4540,15 +4545,18 @@ nav ul li {
 
   .case-item_img {
     margin-top: 35px;
+    padding-top: 35px;
     margin: 0 auto;
   }
 
   .case-item_bio {
     margin: 0 auto;
+    margin-bottom: 23px;
   }
 
   .case-item_bio img {
     margin: 0 auto;
+    margin-bottom: 10px;
   }
 
   .case-item_bio p {
@@ -4575,8 +4583,13 @@ nav ul li {
     margin: 0 auto;
   }
 
-
-
+  .case-mobile-bio .dectop-hidden {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
 
 
 
@@ -6116,6 +6129,25 @@ nav ul li {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+  }
+
+  .mobile-row2 .review-item_bio p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 23px;
+  }
+
+  .mobile-row2 .review-item_bio span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+  }
+
+  .review .title-m h2 {
+    text-align: left;
+    padding-top: 60px;
   }
 
   /* Popup Mobile-phone */
