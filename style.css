@@ -5525,11 +5525,19 @@ nav ul li {
   }
 
   .banner_2 {
+    position: relative;
+    background: linear-gradient(90.21deg, #BD092C 0.16%, #C60B31 36.16%, #C91032 75.32%, #BD082F 100.2%);
+  }
+
+  .bg-mobile {
     background-image: url(img/banner-girl-mobile2.png);
-    background-position: 0 563px;
     background-size: 100%;
     padding-bottom: 20px;
-    background-color: #D51A36;
+    height: 64vw;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
   }
 
   .about-wrap {
@@ -6334,9 +6342,7 @@ nav ul li {
     background-repeat: no-repeat;
     width: 40px;
     height: 65px;
-
-    margin: auto auto auto 0;
-
+    background-position: 5px 20px;
   }
 
 }

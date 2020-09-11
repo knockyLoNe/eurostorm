@@ -16,6 +16,8 @@ window.onscroll = function () {
     buttonTop();
 }
 
+const isMobile = window.innerWidth < 555;
+
 function accHide() {
     var acc = document.querySelectorAll('.acc-header');
     var blocks = document.querySelectorAll('.acc-item')
@@ -33,7 +35,7 @@ function accHide() {
 
 function doctorsSlider() {
     var swiper = new Swiper('.doctors-container', {
-        slidesPerView: 2,
+        slidesPerView: isMobile ? 1 : 2,
         spaceBetween: 30,
         loop: true,
         loopFillGroupWithBlank: true,
@@ -84,7 +86,7 @@ function blogSlider() {
 
 function reviewSlider() {
     var swiper = new Swiper('.review-slider', {
-        slidesPerView: 2,
+        slidesPerView: isMobile ? 1 : 2,
         spaceBetween: 20,
         loop: true,
         loopFillGroupWithBlank: true,
