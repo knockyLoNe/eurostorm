@@ -6,11 +6,6 @@ var menu = document.querySelector(".menu");
 var burger = document.querySelector('.modal-menu');
 var burgerClose = document.querySelector(".burger-close");
 
-var arrowDown = document.querySelector(".img-down");
-var shortCut = document.querySelector('.mobile-short_cut');
-var docCard = document.querySelector(".doctors-bio");
-var docCardShow = document.querySelector(".doctors-item");
-
 function closeBurgerMenu() {
     burger.classList.remove('modal-menu_show');
     burgerClose.classList.remove('burger-close_show');
@@ -40,10 +35,3 @@ menu.addEventListener("click", function () {
 });
 
 burgerClose.addEventListener("click", closeBurgerMenu);
-
-arrowDown.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    docCard.classList.add('doctors-bio-show');
-    shortCut.classList.remove('mobile-short_cut');
-    console.log('click');
-});

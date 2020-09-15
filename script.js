@@ -157,7 +157,7 @@ function diplomSlider() {
 
 function historySlider() {
     var swiper = new Swiper('.history-container', {
-        slidesPerView: 1,
+        slidesPerView: isMobile ? 1 : 2,
         spaceBetween: 0,
         loop: true,
         loopFillGroupWithBlank: true,
