@@ -15,30 +15,35 @@
     <header>
         <div class="container container_big">
 
-            <div class="menu">
-                <div class="burger-menu">
-                    <div class="burger-menu_item"></div>
-                    <div class="burger-menu_item"></div>
-                    <div class="burger-menu_item"></div>
+            <div>
+                <div class="menu">
+                    <div class="burger-menu">
+                        <div class="burger-menu_item"></div>
+                        <div class="burger-menu_item"></div>
+                        <div class="burger-menu_item"></div>
+                    </div>
+                    <div class="menu-links">
+                        <a href="./services.html">Услуги</a>
+                        <a href="./price.html">Цены</a>
+                        <a href="./doctors.html">Врачи</a>
+                        <a href="./about.html">О клинике</a>
+                        <a href="./documentation.html">Документация</a>
+                        <a href="">Услуги по ОМС</a>
+                        <a href="./advisable.html">Полезная информация</a>
+                        <a href="./review.html">Отзывы</a>
+                        <a href="./contact.html">Контакты</a>
+                    </div>
+                    <button class="menu-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" ll="none">
+                            <path
+                                d="M26.5406 21.2768L22.0967 16.8329C22.9047 15.217 23.4433 13.3317 23.4433 11.4464C23.4433 5.11721 18.3261 0 11.9969 0C5.66774 0 0.550537 5.11721 0.550537 11.4464C0.550537 17.7756 5.66774 22.8928 11.9969 22.8928C13.8822 22.8928 15.7675 22.3541 17.3835 21.5461L21.8273 25.99C23.174 27.3367 25.1939 27.3367 26.5406 25.99C27.7525 24.6434 27.7525 22.6234 26.5406 21.2768ZM11.9969 20.1995C7.14904 20.1995 3.2438 16.2943 3.2438 11.4464C3.2438 6.5985 7.14904 2.69327 11.9969 2.69327C16.8448 2.69327 20.75 6.5985 20.75 11.4464C20.75 16.2943 16.8448 20.1995 11.9969 20.1995Z"
+                                fill="#EBEBEB" />
+                        </svg>
+                    </button>
                 </div>
-                <div class="menu-links">
-                    <a href="./services.html">Услуги</a>
-                    <a href="./price.html">Цены</a>
-                    <a href="./doctors.html">Врачи</a>
-                    <a href="./about.html">О клинике</a>
-                    <a href="./documentation.html">Документация</a>
-                    <a href="">Услуги по ОМС</a>
-                    <a href="./advisable.html">Полезная информация</a>
-                    <a href="./review.html">Отзывы</a>
-                    <a href="./contact.html">Контакты</a>
-                </div>
-                <button class="menu-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
-                        <path
-                            d="M26.5406 21.2768L22.0967 16.8329C22.9047 15.217 23.4433 13.3317 23.4433 11.4464C23.4433 5.11721 18.3261 0 11.9969 0C5.66774 0 0.550537 5.11721 0.550537 11.4464C0.550537 17.7756 5.66774 22.8928 11.9969 22.8928C13.8822 22.8928 15.7675 22.3541 17.3835 21.5461L21.8273 25.99C23.174 27.3367 25.1939 27.3367 26.5406 25.99C27.7525 24.6434 27.7525 22.6234 26.5406 21.2768ZM11.9969 20.1995C7.14904 20.1995 3.2438 16.2943 3.2438 11.4464C3.2438 6.5985 7.14904 2.69327 11.9969 2.69327C16.8448 2.69327 20.75 6.5985 20.75 11.4464C20.75 16.2943 16.8448 20.1995 11.9969 20.1995Z"
-                            fill="#EBEBEB" />
-                    </svg>
-                </button>
+
+                <div class="burger-close"></div>
+
             </div>
 
 
@@ -70,7 +75,10 @@
                 </div>
                 <button class="header-button but-red">Записаться на прием</button>
             </div>
-            <div class="mobile-phone"></div>
+            <div class="mobile-alignment">
+                <div class="mobile-phone"></div>
+                <div class="mobile-close"></div>
+            </div>
         </div>
     </header>
     <section class="burger-section">
@@ -1027,8 +1035,273 @@
                 fill="black" />
         </svg>
     </div>
+
+
+    <div class="modal-mobile modal-mobile_phone">
+        <div class="modal-mobile_contact_info">
+            <p>пн — пт: с 8:00 до 20:00 сб — вс: с 9:00 до 15:00</p>
+            <a href="tel:+78314115116">+7 (831) 411-51-16</a><br>
+            <a href="" class="header-contact__wrap_link">Нижний Новгород, <strong>пр. Гагарина</strong>, 162 «А»</a>
+        </div>
+        <div class="modal-mobile_contact_info">
+            <p>пн — пт: с 8:00 до 20:00 сб — вс: с 9:00 до 15:00</p>
+            <a href="tel:+78312163440">+7 (831) 216-34-40</a><br>
+            <a href="" class="header-contact__wrap_link">Нижний Новгород, <strong>ул. Рокоссовского</strong>, 10</a>
+        </div>
+        <div class="modal-mobile_social_links">
+            <ul>
+                <li><a href=""><img src="./img/insta_mobile.png" alt=""></a></li>
+                <li><a href=""><img src="./img/vk_mobile.png" alt=""></a></li>
+                <li><a href=""><img src="./img/telegram_mobile.png" alt=""></a></li>
+                <li><a href=""><img src="./img/whatsup_mobile.png" alt=""></a></li>
+                <li><a href=""><img src="./img/viber_mobile.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="mobile-container_button">
+            <button class="but-red">Записаться на прием</button>
+        </div>
+    </div>
+
+    <div class="modal-menu modal-menu_burger">
+        <div class="find-mobile">
+
+            <input type="text" class="find-text">
+            <button class="button-find-mobile">Найти</button>
+        </div>
+        <ul class="modal-menu_navigation">
+            <div class="modal-menu_droplist">
+
+
+
+                <div class="acc-header">
+                    <div class="acc-header__title">
+                        <p>Услуги</p>
+                    </div>
+
+                    <button class="acc-header__but">
+                        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.22287 10.0181L7.9541 3.83465L13.6853 10.0181L15.4541 8.10981L7.9541 0.0180671L0.454101 8.10981L2.22287 10.0181Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="services-wrap acc-item">
+
+                    <div class="acc">
+                        <div class="acc-header">
+                            <div class="acc-header__title">
+
+                                <p>Имплантация</p>
+                            </div>
+                            <button class="acc-header__but">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.22287 10.0181L7.9541 3.83465L13.6853 10.0181L15.4541 8.10981L7.9541 0.0180671L0.454101 8.10981L2.22287 10.0181Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="services-wrap acc-item">
+                            <button class="services-wrap__button"><a href="">Имплантация<br> «под ключ»</a></button>
+                            <button class="services-wrap__button"><a href="">Одномоментная имплантация</a></button>
+                            <button class="services-wrap__button"><a href="">Имплантация all-on-4</a></button>
+                            <button class="services-wrap__button"><a href="">Имплантация all-on-6</a></button>
+                            <button class="services-wrap__button"><a href="">Синус-лифтинг</a></button>
+                            <button class="services-wrap__button"> <a href="">Костная пластика</a></button>
+                            <button class="services-wrap__button"><a href="">Имплантация по 3D-шаблону</a></button>
+                        </div>
+                    </div>
+                    <div class="acc">
+                        <div class="acc-header">
+                            <div class="acc-header__title">
+
+                                <p>Протезирование</p>
+                            </div>
+                            <button class="acc-header__but">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.22287 10.0181L7.9541 3.83465L13.6853 10.0181L15.4541 8.10981L7.9541 0.0180671L0.454101 8.10981L2.22287 10.0181Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="services-wrap acc-item">
+                            <button class="services-wrap__button"><a href=""> Виниры</a></button>
+                            <button class="services-wrap__button"><a href="">Коронки из прессован- ной керамики EMAX</a>
+                            </button>
+                            <button class="services-wrap__button"><a href="">Съёмное протезирование</a> </button>
+                            <button class="services-wrap__button"><a href="">Протезирование на имлантатах</a> </button>
+                            <button class="services-wrap__button"><a href="">Зубные коронки с опорой на свои зубы</a>
+                            </button>
+                            <button class="services-wrap__button"><a href="">Мостовидные протезы</a> </button>
+                        </div>
+                    </div>
+                    <div class="acc">
+                        <div class="acc-header">
+                            <div class="acc-header__title">
+
+                                <p>Исправление прикуса</p>
+                            </div>
+                            <button class="acc-header__but">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.22287 10.0181L7.9541 3.83465L13.6853 10.0181L15.4541 8.10981L7.9541 0.0180671L0.454101 8.10981L2.22287 10.0181Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="services-wrap acc-item">
+                            <button class="services-wrap__button"><a href="">Брекет-системы</a> </button>
+                            <button class="services-wrap__button"><a href="">Элайнеры</a> </button>
+                            <button class="services-wrap__button"><a href="">Трейнеры и каппы</a> </button>
+                        </div>
+                    </div>
+                    <div class="acc">
+                        <div class="acc-header">
+                            <div class="acc-header__title">
+
+                                <p>Лечение зубов и десен</p>
+                            </div>
+                            <button class="acc-header__but">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.22287 10.0181L7.9541 3.83465L13.6853 10.0181L15.4541 8.10981L7.9541 0.0180671L0.454101 8.10981L2.22287 10.0181Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="services-wrap acc-item">
+                            <button class="services-wrap__button"><a href="">Лечение кариес</a> </button>
+                            <button class="services-wrap__button"><a href="">Лечение каналов зуба</a> </button>
+                            <button class="services-wrap__button"><a href="">Эстетическая реставрация</a> </button>
+                            <button class="services-wrap__button"><a href="">Лечение гранулемы и кисты зуба</a>
+                            </button>
+                            <button class="services-wrap__button"><a href="">Лечение пародонтоза</a> </button>
+                            <button class="services-wrap__button"><a href=""> Плазмолифтинг дёсен</a></button>
+                            <button class="services-wrap__button"><a href="">Лечение стоматита</a> </button>
+                            <button class="services-wrap__button"><a href="">Профгигиена полости рта</a> </button>
+                        </div>
+                    </div>
+                    <div class="acc">
+                        <div class="acc-header">
+                            <div class="acc-header__title">
+
+                                <p>Удаление зубов</p>
+                            </div>
+                            <button class="acc-header__but">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.22287 10.0181L7.9541 3.83465L13.6853 10.0181L15.4541 8.10981L7.9541 0.0180671L0.454101 8.10981L2.22287 10.0181Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="services-wrap acc-item">
+                            <button class="services-wrap__button"><a href="">Удаление коренного зуба</a> </button>
+                            <button class="services-wrap__button"><a href="">Удаление подвижного зуба</a> </button>
+                            <button class="services-wrap__button"><a href="">Удаление однокорневого зуба</a> </button>
+                            <button class="services-wrap__button"><a href="">Удаление многокорневого зуба</a> </button>
+                            <button class="services-wrap__button"><a href="">Удаление ретиниро- ванного зуба</a>
+                            </button>
+                            <button class="services-wrap__button"><a href="">Удаление зуба мудрости</a> </button>
+                            <button class="services-wrap__button"><a href="">Удаление корня зуба</a> </button>
+                        </div>
+                    </div>
+                    <div class="acc">
+                        <div class="acc-header">
+                            <div class="acc-header__title">
+
+                                <p>Лечение зубов во сне</p>
+                            </div>
+                            <button class="acc-header__but">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.22287 10.0181L7.9541 3.83465L13.6853 10.0181L15.4541 8.10981L7.9541 0.0180671L0.454101 8.10981L2.22287 10.0181Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="services-wrap acc-item">
+                            <button class="services-wrap__button"><a href="">Удаление зубов</a> </button>
+                            <button class="services-wrap__button"><a href="">Сложная хиругия: удаление кист, пластика
+                                    дёсен,
+                                    костная пластика</a> </button>
+                            <button class="services-wrap__button"><a href="">Терапия без боли: кариес и пульпит,
+                                    профессиональная чистка, лечение каналов</a> </button>
+                            <button class="services-wrap__button"><a href=""> Имплантация</a></button>
+                        </div>
+                    </div>
+                    <div class="acc">
+                        <div class="acc-header">
+                            <div class="acc-header__title">
+
+                                <p>Детская стоматология</p>
+                            </div>
+                            <button class="acc-header__but">
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.22287 10.0181L7.9541 3.83465L13.6853 10.0181L15.4541 8.10981L7.9541 0.0180671L0.454101 8.10981L2.22287 10.0181Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="services-wrap acc-item">
+                            <button class="services-wrap__button"><a href="">Лечение зубов и дёсен</a> </button>
+                            <button class="services-wrap__button"><a href=""> Удаление зубов</a></button>
+                            <button class="services-wrap__button"><a href="">Профгигиена полости рта и зубов</a>
+                            </button>
+                            <button class="services-wrap__button"><a href=""> Коррекция прикуса</a></button>
+                            <button class="services-wrap__button"><a href="">Протезирование молочных зубов</a> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <li><a href="./price.html">Цены</a></li>
+            <li><a href="./doctors.html">Врачи</a></li>
+            <li><a href="./about.html">О клинике</a></li>
+            <li><a href="./documentation.html">Документация</a></li>
+            <li><a href="">Услуги по ОМС</a></li>
+            <li><a href="./advisable.html">Полезная информация</a></li>
+            <li><a href="./review.html">Отзывы</a></li>
+            <li><a href="./contact.html">Контакты</a></li>
+        </ul>
+
+
+        <div class="button-contact_area">
+            <button class="but-red">Записаться на прием</button>
+
+
+            <div class="modal-menu_contact_info">
+                <a href="tel:+78314115116">+7 (831) 411-51-16</a><br>
+                <a href="" class="header-contact__wrap_link">Нижний Новгород, <strong>пр. Гагарина</strong>, 162 «А»</a>
+            </div>
+            <div class="modal-menu_contact_info">
+                <a href="tel:+78312163440">+7 (831) 216-34-40</a><br>
+                <a href="" class="header-contact__wrap_link">Нижний Новгород, <strong>ул. Рокоссовского</strong>, 10</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+
     <script src="./swiper.min.js"></script>
     <script src='./script.js'></script>
+    <script src='./script-popup.js'></script>
 </body>
 
 </html>
