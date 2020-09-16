@@ -6777,6 +6777,7 @@ nav ul li {
 
   .modal-menu_droplist .acc-header_active {
     border: 0;
+    background: #E5E5E5;
   }
 
   .modal-menu_droplist .acc-header__title p {
@@ -6802,9 +6803,29 @@ nav ul li {
   .acc-item_active {
     margin-bottom: 40px;
     margin-top: 30px;
+    padding-bottom: 60px;
   }
 
   .modal-menu_droplist .acc-header_active {
     border: 0;
   }
+
+  .acc-header {
+    box-shadow: none;
+    border: 0;
+  }
+
+  .acc-header__but:hover path {
+    fill: black;
+  }
+
+  .acc-header__but:hover {
+    background-color: inherit;
+  }
+
+  .modal-menu_droplist>div:first-child {
+    background-color: #e5e5e5;
+  }
+
+
 }
