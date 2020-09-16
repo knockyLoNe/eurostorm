@@ -87,6 +87,10 @@ header .menu {
   display: none;
 }
 
+.mobile-phone-check {
+  display: none;
+}
+
 /* -= =- */
 
 .row {
@@ -6454,6 +6458,88 @@ nav ul li {
     margin-bottom: 55px;
   }
 
+  /* Rotozei Page */
+
+  .banner_4 .banner-text h1 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 82px;
+  }
+
+  .banner_4 .banner-text h2 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .banner_4 .banner-text h1:before {
+    right: 72%;
+    top: 142%;
+  }
+
+  .banner_4 .banner-img img {
+    background-size: 100%;
+    height: 37vw;
+    top: 360px;
+    left: -196px;
+    position: absolute;
+  }
+
+  .banner_4 .banner-text:before {
+    background-size: 44%;
+    height: 58vw;
+    top: 477px;
+    left: -32px;
+  }
+
+  .adventages-item img {
+    max-width: 144px;
+  }
+
+  .signup_rotoz:after {
+    display: none;
+  }
+
+  .implant-wrap_text__img {
+    display: none;
+  }
+
+  .mobile-phone-check {
+    display: block;
+    width: 40vh;
+  }
+
+  .mobile-phone-check-text {
+    width: 100%;
+  }
+
+  .mobile-phone-check h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .caries {
+    background: rgba(244, 244, 244, 0.9);
+  }
+
+  .treatment {
+    background: rgba(244, 244, 244, 0.9);
+  }
+
+  .servises-grey {
+    background: rgba(244, 244, 244, 0.9);
+  }
+
+  .implant-case {
+    background: rgba(244, 244, 244, 0.9);
+  }
+
+  .history-grey {
+    background: rgba(244, 244, 244, 0.9);
+  }
+
   /* Popup Mobile-phone */
 
   .modal-mobile {
@@ -6716,5 +6802,9 @@ nav ul li {
   .acc-item_active {
     margin-bottom: 40px;
     margin-top: 30px;
+  }
+
+  .modal-menu_droplist .acc-header_active {
+    border: 0;
   }
 }
