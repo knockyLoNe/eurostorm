@@ -8,8 +8,10 @@ window.onload = function () {
     reviewSlider();
     buttonTop();
     implantSlider();
+    implantSliderMobile();
     scrollButton();
     accHide();
+    removeSelectValue();
 }
 
 window.onscroll = function () {
@@ -138,6 +140,26 @@ function implantSlider() {
     });
 }
 
+function implantSliderMobile() {
+    var swiper = new Swiper('.implant-container2', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.implant-pagination2',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + "Кейс " + (index + 1) + '</span>';
+            },
+        },
+        navigation: {
+            nextEl: '.implant-button_next',
+            prevEl: '.implant-button_prev',
+        },
+    });
+}
+
 function diplomSlider() {
     var swiper = new Swiper('.diplom-container', {
         slidesPerView: 1,
@@ -204,3 +226,13 @@ link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add('modal-mobile_show');
 });
+
+const selects = document.querySelectorAll('select.buttons-select__item');
+
+function removeSelectValue() {
+    if (isMobile) selects.forEach((select) => (select.value = ''));
+}
+
+selects.forEach((select) =>
+    select.addEventListener('change', removeSelectValue)
+);

@@ -91,6 +91,30 @@ header .menu {
   display: none;
 }
 
+.centovshik-mobile {
+  display: none;
+}
+
+.diplom-container:nth-child(2) {
+  display: none;
+}
+
+.implant-case-mobile {
+  display: none;
+}
+
+.review-item_bio_last {
+  display: none;
+}
+
+.desctop_version {
+  display: flex;
+}
+
+.modal-appointment-to-doctor {
+  display: block;
+}
+
 /* -= =- */
 
 .row {
@@ -3092,12 +3116,15 @@ header .menu {
 
 .question-form {
   margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .question-form_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -3109,9 +3136,11 @@ header .menu {
   width: 100%;
   background: #FFFFFF;
   border: 3px solid #006DB5;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 15px 20px;
   min-height: 72px;
+  height: 265px;
+  margin-left: 23px;
 }
 
 .question-form_wrap .ques::-webkit-input-placeholder {
@@ -3925,6 +3954,62 @@ nav ul li {
   color: #FFFFFF;
 }
 
+.implant-pagination2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 110px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.implant-pagination2_rotoz span.swiper-pagination-bullet-active {
+  background: #00B9E3 !important;
+  color: #FFFFFF;
+}
+
+.implant-pagination2 span {
+  background: #ffffff;
+  border: 3px solid #FFFFFF;
+  border-radius: 2px;
+  max-width: 110px;
+  width: 100%;
+  min-height: 65px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6em;
+  line-height: 19px;
+  color: #000000;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.implant-pagination2 span:last-child {
+  margin-bottom: 0;
+}
+
+.implant-pagination2 span.swiper-pagination-bullet-active {
+  background-color: #005D9B;
+  color: #FFFFFF;
+}
+
 .implant-cover {
   margin-left: auto;
   display: -webkit-box;
@@ -4272,6 +4357,8 @@ nav ul li {
   font-weight: normal;
   font-size: 16px;
   line-height: 46px;
+  margin-left: 20px;
+  list-style: disc;
 }
 
 .treatment p {
@@ -4289,11 +4376,49 @@ nav ul li {
   margin: 0;
 }
 
-
-
 /*# sourceMappingURL=style.css.map */
+/*--------------------------------------------------------------*/
+/* ---------------------- Modal desctop ------------------------*/
+/*--------------------------------------------------------------*/
 
+.modal-appointment-to-doctor {
+  display: none;
+}
+
+
+.modal-appointment-to-doctor {
+  max-width: 1200px;
+  height: 548px;
+  background: #FFFFFF;
+  border: 3px solid #006DB5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.modal-appointment-to-doctor .title h2 {
+  text-align: center;
+  margin-top: 42px;
+}
+
+.modal-appointment-to-doctor .text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.modal-appointment-to-doctor .checkboxs-wrap {
+  justify-content: flex-start;
+}
+
+.modal-appointment-to-doctor .question-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*--------------------------------------------------------------*/
 /*------------------------mobile styles-------------------------*/
+/*--------------------------------------------------------------*/
 
 @media (max-width: 555px) {
   .eye {
@@ -5291,6 +5416,7 @@ nav ul li {
   }
 
   .question-form {
+    display: block;
     margin-top: 24px;
   }
 
@@ -5499,6 +5625,8 @@ nav ul li {
 
   .implant-case_wrap .implant-pagination {
     flex-direction: row;
+    width: 222px;
+    align-items: baseline;
   }
 
   .implant-case_wrap__control {
@@ -5521,6 +5649,63 @@ nav ul li {
 
   .implant-slide__bio {
     flex-wrap: wrap;
+  }
+
+  .implant-slide {
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .implant-slide__bio img {
+    margin: 0 auto;
+  }
+
+  .implant-slide .implant-slide__bio p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .implant-slide .implant-slide__bio span {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .implant-slide .implant-slide__bio a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .implant-slide .implant-slide__text p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .implant-slide .implant-slide__text span {
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+
+  .implant-slide .implant-slide__img {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .implant-slide-container {
+    margin: 0 auto;
+  }
+
+  .review .title h2 {
+    text-align: left;
   }
 
   /* Vacancies page */
@@ -5822,6 +6007,23 @@ nav ul li {
     display: none;
   }
 
+  .centovshik_descktop {
+    display: none;
+  }
+
+  .centovshik-mobile {
+    display: flex;
+    margin-top: 8em;
+    margin-bottom: -5em;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .centovshik-mobile .slider-button {
+    width: 43px;
+    margin: 0;
+  }
+
   .history-slide_about {
     flex-direction: column;
   }
@@ -6090,6 +6292,25 @@ nav ul li {
     line-height: 19px;
   }
 
+  .doctor-education .diplom-button_next {
+    right: -12px;
+  }
+
+  .doctor-education .diplom-button_prev {
+    left: -12px;
+  }
+
+  .diplom-container:first-child {
+    display: none;
+  }
+
+  .diplom-container:nth-child(2) {
+    display: block;
+  }
+
+  .diplom-slide {
+    place-content: center;
+  }
 
   /* Doctor page */
 
@@ -6257,6 +6478,44 @@ nav ul li {
     margin-top: 15px;
   }
 
+  .buttons-select__wrap {
+    place-content: center;
+    justify-content: space-evenly;
+  }
+
+  /* .buttons-select__item {
+    margin-right: 0;
+  } */
+
+  .implant-pagination2 {
+    flex-direction: row;
+    width: 180px;
+    max-width: 220;
+    min-width: 84px;
+    place-content: center;
+    align-items: baseline;
+  }
+
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    background-color: #F9F9FC;
+  }
+
+  .implant-case-mobile .slider-button {
+    margin-top: -25px;
+  }
+
+  .implant-case-mobile {
+    display: block;
+  }
+
+  .implant-case {
+    display: none;
+  }
+
+  .implant-case_wrap__slide {
+    flex: 0 1 100%;
+  }
+
   /* Review page */
 
   .review {
@@ -6267,7 +6526,6 @@ nav ul li {
     font-weight: bold;
     font-size: 34px;
     line-height: 40px;
-    text-align: center;
   }
 
   .review .services-text {
@@ -6383,11 +6641,6 @@ nav ul li {
     padding-bottom: 20px;
   }
 
-  .review-item_bio {
-    display: inline-block;
-    width: 196px;
-  }
-
   .review .but-blue a {
     font-weight: bold;
     font-size: 16px;
@@ -6456,7 +6709,7 @@ nav ul li {
 
   .review-question .question-form_wrap input {
     border-radius: 10px;
-    height: 265px;
+    margin-left: 0;
   }
 
   .review-question .review-text-a {
@@ -6480,6 +6733,39 @@ nav ul li {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
+
+
+  .review-item_bio img {
+    display: inline-block;
+  }
+
+  .review-item_bio p {
+    display: inline-block;
+  }
+
+  .review-item_bio span {
+    display: block;
+  }
+
+  .review-item-bio_mobile {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .review-item-bio_mobile p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .review .row-main {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .review-page .row-last {
+    padding-left: 0;
   }
 
   /* Rotozei Page */
@@ -6556,9 +6842,41 @@ nav ul li {
     background: rgba(244, 244, 244, 0.9);
   }
 
-  .history-grey {
-    background: rgba(244, 244, 244, 0.9);
+  .row-last img {
+    display: inline-block;
+    margin-bottom: 13px;
   }
+
+  .review-item_bio_last {
+    display: inline-block;
+    width: 200px;
+    margin: 0;
+  }
+
+  .review-item_bio_last p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    width: 108px;
+    margin-left: 14px;
+  }
+
+  .review-item_bio_last span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    width: 258px;
+
+  }
+
+  .desctop_version {
+    display: none;
+  }
+
+  .mobile-services-grey .acc-header {
+    margin-bottom: 24px;
+  }
+
 
   /* Popup Mobile-phone */
 
@@ -6880,6 +7198,63 @@ nav ul li {
     top: 10px;
     left: 36px;
     bottom: 0;
-    z-index: 999;
+    z-i ndex: 999;
   }
+
+  /* Modal appointment to doctor */
+
+  .modal-appointment-to-doctor .title h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 23px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .modal-appointment-to-doctor .text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+
+  .modal-appointment-to-doctor .checkboxs-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-appointment-to-doctor .question-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-appointment-to-doctor .buttons-select__item {
+    border-radius: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .modal-appointment-to-doctor .review-text-a {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .modal-appointment-to-doctor .custom-checkbox+label {
+    margin-bottom: 20px;
+  }
+
+  .modal-appointment-to-doctor {
+    max-width: none;
+    border-radius: 0;
+    border: 0;
+  }
+
 }
