@@ -3115,9 +3115,16 @@ header .menu {
 }
 
 .question-form {
-  margin-top: 30px;
+  margin: 30px 0;
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.question-form > .submitting {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column: 1 / span 2;
+  padding-top: 2em;
 }
 
 .question-form_wrap {
@@ -3128,7 +3135,7 @@ header .menu {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 30px;
+  // margin-top: 30px;
 }
 
 .question-form_wrap .ques {
@@ -3138,8 +3145,8 @@ header .menu {
   border: 3px solid #006DB5;
   border-radius: 10px;
   padding: 15px 20px;
-  min-height: 72px;
-  height: 265px;
+  // min-height: 72px;
+  // height: 265px;
   margin-left: 23px;
 }
 
@@ -3173,6 +3180,18 @@ header .menu {
   font-size: 2em;
   line-height: 24px;
   color: #000000;
+}
+
+.fileinput {
+  display:none;
+}
+
+.clickme {
+  border: 1px solid #000;
+  padding: 1em;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #fff;
 }
 
 .question-form .row {
@@ -4323,7 +4342,11 @@ nav ul li {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
+  // text-align: center;
+}
+
+.review-question button {
+  margin-left: auto;
 }
 
 /*Rotozei page */
